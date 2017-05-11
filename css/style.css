@@ -11,58 +11,46 @@
 	font-style: normal;
 }
 
-body{
-  font-family: VT323, Arial, sans-serif;
-}
-
 /*reset css*/
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
-/*general styles*/
-
+/*common styles*/
+body{
+  font-family: VT323,Arial,sans-serif;
+}
+.main-width{
+	width: 800px;
+	margin: 0 auto;
+	border: 1px solid #00ff00;
+}
+.main-width::after{
+	clear: both;
+	content: "";
+	display: block;
+}
+/*styles for header*/
 header{
 	width: 100%;
 	background-color: grey;
 	font-size: 25px;
 }
-
-.main-width{
-	width: 800px;
-	margin 0 auto;
-	display: block;
-}
-
-.main-width::after{
-	clear:both;
-	content: "";
-	display: block;
-}
-
 #header-logo{
 	float: left;
 }
-
 #header-menu{
 	float: right;
 }
-
 #header-menu li{
 	display: inline-block;
 }
-
+/*styles for slider*/
 .slider{
 	background-color: beige;
 	text-align: center;
 }
-
-.slider h1{
-	background-color: beige;
-	text-align: center;
-}
-
 .button{
 	background-color: grey;
 	width: 100px;
@@ -70,11 +58,57 @@ header{
 	border-radius: 2px;
 	box-shadow: 0px 0px 3px darkgrey;
 }
-
 .button:hover{
 	box-shadow: none;
 }
 /*styles for sections*/
 .section-header{
-	
+	text-align: center;
+}
+.products {
+	background-color: grey;
+}
+.medium-box{
+	width: 30%;
+	display: inline-block;
+	margin-left: 15px;
+}
+.content-box{
+	background-color: white;
+	height: 100px;
+}
+.section-header h2{
+	padding-bottom: 20px;
+}
+.description{
+	background-color: beige;
+}
+.box{
+	vertical-align: top;
+	display: inline-block;
+	width: 49%;
+	margin: 0 auto;
+}
+.box span{
+	display: block;
+}
+.box h3{
+	text-align: center;
+	font-size: 35px;
+}
+.box p{
+	padding: 15px;
+}
+.small-box{
+	display: inline-block;
+	width: 14%;
+	margin-left: 13px;
+}
+
+.our-clients{
+	background-color: grey;
+}
+
+.super-section{
+	background-color: beige;
 }
