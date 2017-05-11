@@ -22,3 +22,59 @@ body{
   box-sizing: border-box;
 }
 /*general styles*/
+
+header{
+	width: 100%;
+	background-color: grey;
+	font-size: 25px;
+}
+
+.main-width{
+	width: 800px;
+	margin 0 auto;
+	display: block;
+}
+
+.main-width::after{
+	clear:both;
+	content: "";
+	display: block;
+}
+
+#header-logo{
+	float: left;
+}
+
+#header-menu{
+	float: right;
+}
+
+#header-menu li{
+	display: inline-block;
+}
+
+.slider{
+	background-color: beige;
+	text-align: center;
+}
+
+.slider h1{
+	background-color: beige;
+	text-align: center;
+}
+
+.button{
+	background-color: grey;
+	width: 100px;
+	margin: 10px auto;
+	border-radius: 2px;
+	box-shadow: 0px 0px 3px darkgrey;
+}
+
+.button:hover{
+	box-shadow: none;
+}
+/*styles for sections*/
+.section-header{
+	
+}
