@@ -1,120 +1,200 @@
 @font-face {
-	font-family: 'VT323';
-	src: url('../fonts/VT323-Regular.eot');
-	src: local('VT323 Regular'), local('VT323-Regular'),
-		url('../fonts/VT323-Regular.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/VT323-Regular.woff2') format('woff2'),
-		url('../fonts/VT323-Regular.woff') format('woff'),
-		url('../fonts/VT323-Regular.ttf') format('truetype'),
-		url('../fonts/VT323-Regular.svg#VT323-Regular') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'VT323';
+  src: url('../fonts/VT323-Regular.eot');
+  src: local('VT323 Regular'), local('VT323-Regular'), url('../fonts/VT323-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/VT323-Regular.woff2') format('woff2'), url('../fonts/VT323-Regular.woff') format('woff'), url('../fonts/VT323-Regular.ttf') format('truetype'), url('../fonts/VT323-Regular.svg#VT323-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
+
 
 /*reset css*/
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+
 /*common styles*/
-body{
-  font-family: VT323,Arial,sans-serif;
+
+body {
+  font-family: VT323, Arial, sans-serif;
 }
-.main-width{
-	width: 800px;
-	margin: 0 auto;
-	border: 1px solid #00ff00;
+
+.main-width {
+  width: 800px;
+  margin: 0 auto;
+  border: 1px solid #00ff00;
 }
-.main-width::after{
-	clear: both;
-	content: "";
-	display: block;
+
+.main-width::after {
+  clear: both;
+  content: "";
+  display: block;
 }
+
+
 /*styles for header*/
-header{
-	width: 100%;
-	background-color: grey;
-	font-size: 25px;
+
+header {
+  width: 100%;
+  background-color: grey;
+  font-size: 25px;
 }
-#header-logo{
-	float: left;
+
+#header-logo {
+  float: left;
 }
-#header-menu{
-	float: right;
+
+#header-menu {
+  float: right;
 }
-#header-menu li{
-	display: inline-block;
+
+#header-menu li {
+  display: inline-block;
 }
+
+
 /*styles for slider*/
-.slider{
-	background-color: beige;
-	text-align: center;
+
+.slider {
+  background-color: beige;
+  text-align: center;
 }
-.button{
-	background-color: grey;
-	width: 100px;
-	margin: 10px auto;
-	border-radius: 2px;
-	box-shadow: 0px 0px 3px darkgrey;
+
+.button {
+  background-color: grey;
+  width: 100px;
+  margin: 10px auto;
+  border-radius: 2px;
+  box-shadow: 0px 0px 3px darkgrey;
 }
-.button:hover{
-	box-shadow: none;
+
+.button:hover {
+  box-shadow: none;
 }
+
+
 /*styles for sections*/
-.section-header{
-	text-align: center;
+
+.section-header {
+  text-align: center;
 }
+
 .products {
-	background-color: grey;
+  background-color: grey;
 }
-.medium-box{
-	width: 30%;
-	display: inline-block;
-	margin-left: 15px;
+
+.medium-box {
+  width: 30%;
+  display: inline-block;
+  margin-left: 15px;
+	text-align: justify;
 }
-.content-box{
-	background-color: white;
-	height: 100px;
+
+.medium-box-menu {
+  width: 30%;
+  display: inline-block;
+  margin-left: 15px;
+	text-align: justify;
+	vertical-align: bottom;
 }
-.section-header h2{
-	padding-bottom: 20px;
-}
-.description{
-	background-color: beige;
-}
-.box{
-	vertical-align: top;
-	display: inline-block;
-	width: 49%;
-	margin: 0 auto;
-}
-.box span{
-	display: block;
-}
-.box h3{
+
+.medium-box-title {
+  width: 30%;
+  display: inline-block;
+  margin-left: 15px;
+	margin-bottom: 20px;
 	text-align: center;
-	font-size: 35px;
-}
-.box p{
-	padding: 15px;
-}
-.small-box{
-	display: inline-block;
-	width: 14%;
-	margin-left: 13px;
+	vertical-align: middle;
 }
 
-.our-clients{
-	background-color: grey;
+.medium-box-social {
+  width: 30%;
+  display: inline-block;
+  margin-left: 15px;
+	text-align: justify;
+	vertical-align: bottom;
 }
 
-.super-section{
-	background-color: beige;
+.twitter {
+  display: inline-block;
+	vertical-align: bottom;
+	margin-bottom: 25px;
 }
+
+.fejsbuk {
+  display: inline-block;
+	vertical-align: bottom;
+	margin-bottom: 25px;
+}
+
+.instagram {
+  display: inline-block;
+	vertical-align: bottom;
+	margin-bottom: 25px;
+}
+
+.content-box {
+  background-color: white;
+  height: 150px;
+}
+
+.section-header h2 {
+  padding-bottom: 20px;
+}
+
+.description {
+  background-color: beige;
+}
+
+.box {
+  vertical-align: middle;
+  display: inline-block;
+  width: 49%;
+  margin: 0 auto;
+}
+
+.box span {
+  display: block;
+}
+
+.box h3 {
+  text-align: center;
+  font-size: 35px;
+}
+
+.box p {
+  padding: 15px;
+}
+
+.small-box {
+  display: inline-block;
+  width: 14%;
+  margin-left: 13px;
+}
+
+.our-clients {
+  background-color: grey;
+}
+
+.super-section {
+  background-color: beige;
+}
+
 
 /*styles for footer*/
-footer{
-	width: 100%;
-	background-color: grey;
+
+footer {
+  width: 100%;
+  background-color: grey;
+}
+
+#copyright {
+  float: left;
+}
+
+#foter-logo {
+  float: right;
 }
